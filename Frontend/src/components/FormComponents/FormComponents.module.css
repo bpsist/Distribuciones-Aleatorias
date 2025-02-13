@@ -1,0 +1,48 @@
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding: 1ch;
+}
+
+.fieldsetHeader {
+  font-size: 1rem;
+  border-bottom: 2px solid gray;
+  padding: 2px;
+  margin-bottom: 1ch;
+  color: rgb(94, 94, 94);
+}
+
+.fieldsetInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1ch;
+}
+.labelInput, .labelSelect {
+  display: flex
+
+}
+
+.labelInput label, .labelSelect label {
+  margin-right: auto;
+}
+
+.labelInput input, .labelSelect select {
+  width: 20ch;
+  text-align: center;
+}
+
+.inputError {
+  display: flex;
+  color: rgb(250, 76, 76);
+  font-size: .8rem;
+  align-items: center;
+  gap: .5ch;
+}
+.inputError::before {
+  font-family: 'Material Icons';
+  font-size: 2ch;
+  content: 'warning';
+}

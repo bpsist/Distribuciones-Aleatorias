@@ -1,0 +1,205 @@
+.resultScreen {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(219, 219, 219);
+  padding: 1ch;
+  justify-items: center;
+}
+
+.resultScreen header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1ch;
+  border-bottom: 5px solid rgb(171, 202, 228);
+
+}
+
+.resultHeader {
+  text-align: start;
+  font-size: 1.6rem;
+  padding-bottom: 8px;
+  color: gray;
+}
+
+.actionButtons {
+  margin-left: auto;
+  display: flex;
+  gap: 1ch;
+}
+
+.mainScreen {
+  text-align: start;
+}
+
+.resultScreen {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.testResult {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.downloadButton {
+  background-color: rgb(109, 109, 109);
+  border: 0;
+  border-radius: 1ch;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: .5ch;
+  align-items: center;
+  color: rgb(212, 212, 212);
+  padding: 1ch;
+}
+
+.downloadButton[disabled] {
+  background-color: rgb(61, 61, 61);
+}
+
+.downloadButton:not([disabled]):hover {
+  cursor: pointer;
+  background-color: rgb(68, 68, 68);
+}
+
+.downloadButton::before{
+  font-family: 'Material Icons';
+  font-size: 2ch;
+  content: 'download';
+  filter: opacity(0.8);
+}
+
+.viewDetailsButton {
+  background-color: rgb(74, 115, 252);
+  border: 0;
+  border-radius: 1ch;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: .5ch;
+  align-items: center;
+  color: rgb(212, 212, 212);
+  padding: 1ch;
+}
+
+.viewDetailsButton[disabled] {
+  background-color: rgb(61, 61, 61);
+}
+
+.viewDetailsButton:not([disabled]):hover {
+  cursor: pointer;
+  background-color: rgb(19, 0, 105);
+}
+
+.viewDetailsButton::before{
+  font-family: 'Material Icons';
+  font-size: 2ch;
+  content: 'visibility';
+  filter: opacity(0.8);
+}
+
+
+.viewHistogramButton {
+  background-color: rgb(122, 74, 252);
+  border: 0;
+  border-radius: 1ch;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: .5ch;
+  align-items: center;
+  color: rgb(212, 212, 212);
+  padding: 1ch;
+}
+
+.viewHistogramButton[disabled] {
+  background-color: rgb(61, 61, 61);
+}
+
+.viewHistogramButton:not([disabled]):hover {
+  cursor: pointer;
+  background-color: rgb(55, 44, 105);
+}
+
+.viewHistogramButton::before{
+  font-family: 'Material Icons';
+  font-size: 2ch;
+  content: 'stacked_bar_chart';
+  filter: opacity(0.8);
+}
+
+
+
+/* Detail Screen */
+
+.detailScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detailSummary {
+  
+  margin: 1ch;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2ch;
+
+  font-size: 1.5REM;
+}
+
+.detailSummary div {
+  background-color: rgb(187, 221, 235);
+  border: 1px solid rgb(119, 149, 161);
+  padding: 1ch;
+  border-radius: 1.5ch;
+  text-align: center;
+}
+sup {
+  font-size: .5ch;
+}
+
+/*table*/
+
+table {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(216, 216, 216);
+}
+
+th, td {
+  width: 10rem;
+}
+
+th {
+  background-color: rgb(238, 238, 252);
+  border: 1px solid rgb(216, 216, 216);
+  padding: .3ch;
+}
+
+td {
+  border-right: solid rgb(216, 216, 216) 1px;
+  border-bottom: solid rgb(216, 216, 216) 1px;
+  padding: .5ch;
+}
+
+caption {
+  font-size: 1.3rem;
+  margin-bottom: 1ch;
+  text-align: start;
+  font-weight: 300;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+tr:nth-child(2n) td {
+  background-color: rgb(237, 248, 246);
+}
+
